@@ -1,1 +1,2 @@
 ./get_wishlist.pl WISHLISTIDHERE > wishlist.data
+./filter_wishlist.pl wishlist.data > wishlist.filtered
