@@ -17,4 +17,4 @@ use Data::Dumper;
 
 warn "# Kept ".scalar(@new_wishlist)." items out of ".scalar(@$wishlist)."\n";
 
-print Dumper @new_wishlist;
+print Dumper \@new_wishlist;

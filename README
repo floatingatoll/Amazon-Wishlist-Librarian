@@ -1,2 +1,3 @@
 ./get_wishlist.pl WISHLISTIDHERE > wishlist.data
 ./filter_wishlist.pl wishlist.data > wishlist.filtered
+./scan_library.pl wishlist.filtered HOSTNAMEOFLIBRARYSITE > wishlist.found
