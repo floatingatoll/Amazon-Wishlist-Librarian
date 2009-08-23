@@ -1,6 +1,6 @@
 mkdir results
 ./get_wishlist.pl WISHLISTIDHERE > results/wishlist.data
-./filter_wishlist.pl wishlist.data > results/wishlist.filtered
-./scan_library.pl wishlist.filtered HOSTNAMEOFLIBRARYSITE > results/wishlist.found
-./reserve_wishlist.pl wishlist.found HOSTNAMEOFLIBRARYSITE > results/wishlist.html
-open ./results/wishlist.html
+./filter_wishlist.pl results/wishlist.data > results/wishlist.filtered
+./scan_library.pl results/wishlist.filtered HOSTNAMEOFLIBRARYSITE > results/wishlist.found
+./reserve_wishlist.pl results/wishlist.found HOSTNAMEOFLIBRARYSITE > results/wishlist.html
+open results/wishlist.html
